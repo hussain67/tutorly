@@ -6,7 +6,7 @@ import Page from "./page";
 // Mock console.log to test form submission
 const consoleLogSpy = vi.spyOn(console, "log").mockImplementation(() => {});
 
-describe("Registration Page", () => {
+describe("Signup Page", () => {
 	beforeEach(() => {
 		consoleLogSpy.mockClear();
 		vi.clearAllMocks();
@@ -17,9 +17,9 @@ describe("Registration Page", () => {
 	});
 
 	describe("Form Rendering", () => {
-		it("should render the registration form", () => {
+		it("should render the signup form", () => {
 			render(<Page />);
-			const heading = screen.getByRole("heading", { name: /register/i });
+			const heading = screen.getByRole("heading", { name: /signup/i });
 			expect(heading).toBeInTheDocument();
 		});
 
