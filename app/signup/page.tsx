@@ -26,7 +26,7 @@ function Page() {
 	return (
 		<section className="grid place-content-center h-full ">
 			<div className="bg-white rounded-md p-4">
-				<h1 className="text-2xl tracking-wider mb-4 text-center">Register</h1>
+				<h1 className="text-2xl tracking-wider mb-4 text-center">Signup</h1>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<div className={formFieldStyle}>
 						<label htmlFor="username">Username:</label>
